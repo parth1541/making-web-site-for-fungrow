@@ -1,0 +1,207 @@
+<create_file path="registration.html"></create_file>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page - Join Us Today</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #667eea 0%, #764ba2 100%);
+            font-family: 'Arial', sans-serif;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+        .input-field {
+            border-bottom: 2px solid #667eea;
+            transition: all 0.3s ease;
+        }
+        .input-field:focus {
+            border-bottom: 2px solid #764ba2;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            transition: transform 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+        }
+        .icon {
+            margin-right: 8px;
+        }
+        #referral-section {
+            display: none;
+        }
+        .hero-image {
+            border-radius: 20px 20px 0 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-4">
+    <div class="w-full max-w-2xl form-container">
+        <div class="hero-image">
+            <img src="student.png" alt="student" onerror="this.style.display='none';" />
+        </div>
+        <div class="p-8">
+            <h1 class="text-3xl font-bold text-center text-gray-800 mb-6">
+                <i class="fas fa-user-plus icon"></i>
+                Join Our Community - Open to All Age Groups!
+            </h1>
+            <p class="text-center text-gray-600 mb-8">Register today and be part of an inclusive platform welcoming users of all ages. Please provide your details below. Rest assured, our site allows participation from all age groups, with appropriate safeguards in place.</p>
+            
+            <form id="registrationForm" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="firstName" class="block text-sm font-semibold text-gray-700 mb-1">
+                            <i class="fas fa-signature icon"></i>
+                            First Name
+                        </label>
+                        <input type="text" id="firstName" name="firstName" required
+                               class="w-full px-4 py-2 input-field bg-transparent outline-none"
+                               placeholder="Enter your first name">
+                    </div>
+                    <div>
+                        <label for="lastName" class="block text-sm font-semibold text-gray-700 mb-1">
+                            <i class="fas fa-signature icon"></i>
+                            Last Name
+                        </label>
+                        <input type="text" id="lastName" name="lastName" required
+                               class="w-full px-4 py-2 input-field bg-transparent outline-none"
+                               placeholder="Enter your last name">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-semibold text-gray-700 mb-1">
+                        <i class="fas fa-envelope icon"></i>
+                        Email Address
+                    </label>
+                    <input type="email" id="email" name="email" required
+                           class="w-full px-4 py-2 input-field bg-transparent outline-none"
+                           placeholder="your.email@example.com">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label for="password" class="block text-sm font-semibold text-gray-700 mb-1">
+                            <i class="fas fa-lock icon"></i>
+                            Password
+                        </label>
+                        <input type="password" id="password" name="password" required minlength="8"
+                               class="w-full px-4 py-2 input-field bg-transparent outline-none"
+                               placeholder="Create a strong password">
+                    </div>
+                    <div>
+                        <label for="confirmPassword" class="block text-sm font-semibold text-gray-700 mb-1">
+                            <i class="fas fa-lock icon"></i>
+                            Confirm Password
+                        </label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required
+                               class="w-full px-4 py-2 input-field bg-transparent outline-none"
+                               placeholder="Repeat your password">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="dateOfBirth" class="block text-sm font-semibold text-gray-700 mb-1">
+                        <i class="fas fa-calendar-alt icon"></i>
+                        Date of Birth (for age verification - all age groups welcome)
+                    </label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth" required
+                           class="w-full px-4 py-2 input-field bg-transparent outline-none">
+                </div>
+
+                <div class="flex items-center">
+                    <input type="checkbox" id="agreeTerms" name="agreeTerms" required
+                           class="mr-2 form-checkbox h-5 w-5 text-indigo-600">
+                    <label for="agreeTerms" class="text-sm text-gray-700">
+                        I agree to the <a href="#" class="text-indigo-600 font-semibold">Terms and Conditions</a> and confirm I am of appropriate age to use this service (open to all age groups with parental guidance where necessary).
+                    </label>
+                </div>
+
+                <button type="submit" class="w-full py-3 px-6 btn-primary text-white font-semibold rounded-lg hover:shadow-lg">
+                    <i class="fas fa-paper-plane icon"></i>
+                    Register Now
+                </button>
+            </form>
+
+            <div id="referral-section" class="mt-8 p-6 border-t border-gray-200">
+                <h2 class="text-2xl font-bold text-center text-gray-800 mb-4">
+                    <i class="fas fa-gift icon"></i>
+                    One Last Step - Referral Code
+                </h2>
+                <p class="text-center text-gray-600 mb-6">Great! Your registration is almost complete. If you have a referral code, enter it below for bonus rewards. This is optional but highly appreciated!</p>
+                <input type="text" id="referralCode" name="referralCode"
+                       class="w-full px-4 py-2 input-field bg-transparent outline-none mb-4"
+                       placeholder="Enter referral code (optional)">
+                <button id="submitReferral" class="w-full py-3 px-6 bg-green-500 text-white font-semibold rounded-lg hover:bg-green-600 transition duration-300">
+                    <i class="fas fa-check icon"></i>
+                    Complete Registration
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('registrationForm');
+        const referralSection = document.getElementById('referral-section');
+        const submitReferralButton = document.getElementById('submitReferral');
+        const password = document.getElementById('password');
+        const confirmPassword = document.getElementById('confirmPassword');
+        const dateOfBirth = document.getElementById('dateOfBirth');
+
+        // Simple age calculation (users over 13 assumed adult for demo; adjust as needed)
+        function isValidAge(dob) {
+            const today = new Date();
+            const birthDate = new Date(dob);
+            const age = today.getFullYear() - birthDate.getFullYear();
+            const monthDiff = today.getMonth() - birthDate.getMonth();
+            const dayDiff = today.getDate() - birthDate.getDate();
+            return age >= 0; // Allow all ages; in real app, add restrictions if needed
+        }
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Basic validations
+            if (password.value !== confirmPassword.value) {
+                alert('Passwords do not match. Please try again.');
+                return;
+            }
+            
+            if (!isValidAge(dateOfBirth.value)) {
+                alert('Please enter a valid date of birth. Our platform is open to all age groups.');
+                return;
+            }
+            
+            // Simulated registration success (in real app, send to backend)
+            alert('Registration successful! Welcome to our community.');
+            
+            // Hide form and show referral section
+            form.style.display = 'none';
+            referralSection.style.display = 'block';
+        });
+
+        submitReferralButton.addEventListener('click', function() {
+            const referralCode = document.getElementById('referralCode').value;
+            if (referralCode) {
+                alert('Referral code applied! Thank you for joining. You will receive a bonus email shortly.');
+            } else {
+                alert('Registration complete! No referral code entered - that\'s okay!');
+            }
+            // In real app, redirect to dashboard or home page
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
+

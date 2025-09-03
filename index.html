@@ -1,0 +1,410 @@
+<SKIPPED_HTML_EDIT_MODE></SKIPPED_HTML_EDIT_MODE>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouthHire - Empowering Young Talent Under 18</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .student-gradient { background: linear-gradient(135deg, #A8D5BA 0%, #4CAF50 100%); }
+        .student-text { color: #4CAF50; }
+        .fun-bg { background-color: #F1F8E9; }
+        body { background-color: #FFFFFF; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Navigation -->
+    <header id="nav" class="fixed top-0 w-full fun-bg shadow-lg z-50">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold student-text">
+                <i class="fas fa-graduation-cap mr-2"></i>YouthHire
+            </div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="text-black hover:student-text transition">Home</a></li>
+                <li><a href="#about" class="text-black hover:student-text transition">About</a></li>
+                <li><a href="#opportunities" class="text-black hover:student-text transition">Opportunities</a></li>
+                <li><a href="#jobs" class="text-black hover:student-text transition">Jobs</a></li>
+                <li><a href="#resources" class="text-black hover:student-text transition">Resources</a></li>
+                <li><a href="#contact" class="text-black hover:student-text transition">Contact</a></li>
+            </ul>
+            <button class="md:hidden text-black" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div id="mobile-menu" class="md:hidden fun-bg shadow-md hidden">
+            <ul class="py-2 px-4">
+                <li class="py-2"><a href="#home" onclick="closeMenu()" class="text-black">Home</a></li>
+                <li class="py-2"><a href="#about" onclick="closeMenu()" class="text-black">About</a></li>
+                <li class="py-2"><a href="#opportunities" onclick="closeMenu()" class="text-black">Opportunities</a></li>
+                <li class="py-2"><a href="#jobs" onclick="closeMenu()" class="text-black">Jobs</a></li>
+                <li class="py-2"><a href="#resources" onclick="closeMenu()" class="text-black">Resources</a></li>
+                <li class="py-2"><a href="#contact" onclick="closeMenu()" class="text-black">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="student-gradient text-black py-20 px-4">
+        <div class="container mx-auto text-center">
+            <div class="relative mb-8">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/465c7384-34b6-460c-9e03-6340ed96c138.png" alt="Group of energetic young students laughing and collaborating on a group project with laptops, notebooks, and creative artwork in a bright, colorful classroom setting" class="w-full max-w-4xl mx-auto rounded-lg shadow-lg" />
+            </div>
+            <h1 class="text-5xl font-bold mb-4">Unlock Your Future: Jobs for Teens Under 18!</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">YouthHire connects talented young people under 18 with exciting part-time jobs, internships, and skills-building opportunities. Start your career journey early and have fun while learning!</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#jobs" class="bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition">Explore Jobs</a>
+                <a href="#opportunities" class="border-2 border-black text-black px-8 py-3 rounded-full font-semibold hover:bg-black hover:text-white transition">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 student-text">About YouthHire</h2>
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="flex-1">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d27511aa-5d74-4b27-b578-97a2d83a2f46.png" alt="Diverse group of teenagers in a modern tech hub, working on computers and tablets with mentors, surrounded by creative tools and vibrant posters about career building" class="rounded-lg shadow-lg" />
+                </div>
+                <div class="flex-1">
+                    <h3 class="text-2xl font-semibold mb-4 student-text">Why Choose YouthHire?</h3>
+                    <p class="text-black mb-6 leading-relaxed">Founded to empower young talent, YouthHire specializes in helping students under 18 find meaningful part-time work and internships that align with school schedules. We focus on entry-level opportunities that build skills and confidence for future careers.</p>
+                    <ul class="space-y-2 text-black">
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Part-time and flexible schedules</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Mentor support and skill building</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Safe, legal opportunities for under 18</li>
+                        <li><i class="fas fa-check-circle text-green-500 mr-2"></i>Parents/caregivers involved in process</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opportunities Section -->
+    <section id="opportunities" class="py-20 px-4 fun-bg">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 student-text">Opportunities for Young Talents</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-code text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Web Development Internships</h3>
+                    <p class="text-black">Learn HTML, CSS, and JavaScript basics while building real websites for local businesses and community projects.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-mobile-alt text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Mobile App Creation</h3>
+                    <p class="text-black">Design and develop simple mobile apps using beginner-friendly tools and frameworks, perfect for teens with coding interest.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-search text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">KYC Data Assistant</h3>
+                    <p class="text-black">Entry-level data entry roles in compliance verification, helping with document organization and basic research tasks.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-gamepad text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Game Testing</h3>
+                    <p class="text-black">Play pre-release games and provide feedback on gameplay, bugs, and user experience in a fun, part-time role.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-palette text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Graphic Design Assistant</h3>
+                    <p class="text-black">Create social media graphics, posters, and digital art using simple design tools while learning professional techniques.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <i class="fas fa-laptop-code text-4xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Content Creation</h3>
+                    <p class="text-black">Write blog posts, create videos, and manage social media for teen-focused brands and educational content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="py-20 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 student-text">Featured Job Opportunities</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold student-text">Junior Web Developer</h3>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Part-time</span>
+                    </div>
+                    <p class="text-black mb-4">TeenTech Academy</p>
+                    <p class="text-gray-600 mb-4">Build simple websites using HTML/CSS/JS. Great for students interested in tech. No prior experience required - training provided!</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500">$15-20/hour (part-time)</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition apply-btn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold student-text">Game Tester Intern</h3>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Remote</span>
+                    </div>
+                    <p class="text-black mb-4">FunGames Co.</p>
+                    <p class="text-gray-600 mb-4">Test mobile games before release and give honest feedback. Perfect for gaming enthusiasts and detail-oriented teens.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500">$12-18/hour (flexible)</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition apply-btn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold student-text">KYC Document Organizer</h3>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Part-time</span>
+                    </div>
+                    <p class="text-black mb-4">SecureFinance Teens</p>
+                    <p class="text-gray-600 mb-4">Help organize and verify simple documents for compliance. Learn about data privacy and professional communication.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500">$14-16/hour (school-friendly)</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition apply-btn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold student-text">Social Media Content Creator</h3>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Remote/Hybrid</span>
+                    </div>
+                    <p class="text-black mb-4">Youth Influencers Inc.</p>
+                    <p class="text-gray-600 mb-4">Create engaging content for teen audiences on social media. Great for creative students who love photography and video.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500">$16-22/hour (weekends)</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition apply-btn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold student-text">Online Study Buddy</h3>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Virtual</span>
+                    </div>
+                    <p class="text-black mb-4">LearnTogether Platform</p>
+                    <p class="text-gray-600 mb-4">Help fellow students with homework in math, science, or English. Sharpen your own skills while earning money tutoring.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500">$18-25/hour (sessions)</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition apply-btn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-semibold student-text">App Design Apprentice</h3>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">Part-time</span>
+                    </div>
+                    <p class="text-black mb-4">MobileCreatives</p>
+                    <p class="text-gray-600 mb-4">Sketch app interfaces and learn UI/UX basics. Ideal for artistic teens interested in technology and design.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-gray-500">$15-20/hour (after school)</span>
+                        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition apply-btn">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a href="#" class="bg-green-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700 transition">View All Opportunities</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="py-20 px-4 fun-bg">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 student-text">Student Resources</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <i class="fas fa-book-open text-6xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Resume Builder</h3>
+                    <p class="text-black">Free templates and tips to create a professional resume even if you're new to the job market.</p>
+                    <br><button class="mt-2 bg-green-600 text-white px-6 py-2 rounded">Get Started</button>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-handshake text-6xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Interview Prep</h3>
+                    <p class="text-black">Practice common interview questions and get confidence tips for your first job interviews.</p>
+                    <br><button class="mt-2 bg-green-600 text-white px-6 py-2 rounded">Practice Now</button>
+                </div>
+                <div class="text-center">
+                    <i class="fas fa-trophy text-6xl text-green-500 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">Skills Challenges</h3>
+                    <p class="text-black">Fun quizzes and challenges to build coding, design, and communication skills while earning certificates.</p>
+                    <br><button class="mt-2 bg-green-600 text-white px-6 py-2 rounded">Try Challenges</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 student-text">Contact Us</h2>
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="flex-1">
+                    <h3 class="text-2xl font-semibold mb-4 student-text">Ready to Start?</h3>
+                    <p class="text-black mb-6 leading-relaxed">Parents and guardians are encouraged to contact us for guidance on safe, legal work opportunities for teens under 18. We're here to help build your future!</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt student-text mr-3"></i>
+                            <span class="text-black">456 Student Hub Lane, Youth City, YC 98765</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone student-text mr-3"></i>
+                            <span class="text-black">(555) TEEN-JOB</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope student-text mr-3"></i>
+                            <span class="text-black">hello@youthhire.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <form class="fun-bg p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <label for="name" class="block text-black mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full p-3 border border-black rounded focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-black mb-2">Email Address</label>
+                            <input type="email" id="contact-email" class="w-full p-3 border border-black rounded focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="age" class="block text-black mb-2">Your Age</label>
+                            <input type="number" id="age" min="14" max="17" class="w-full p-3 border border-black rounded focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-black mb-2">How can we help?</label>
+                            <input type="text" id="subject" class="w-full p-3 border border-black rounded focus:outline-none focus:ring-2 focus:ring-green-500" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-black mb-2">Message</label>
+                            <textarea id="message" rows="5" class="w-full p-3 border border-black rounded focus:outline-none focus:ring-2 focus:ring-green-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-green-600 text-white py-3 px-6 rounded font-semibold hover:bg-green-700 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold text-green-400 mb-4">
+                        <i class="fas fa-graduation-cap mr-2"></i>YouthHire
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">Empowering young students under 18 with meaningful work experiences since 2015.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition">About</a></li>
+                        <li><a href="#opportunities" class="hover:text-white transition">Opportunities</a></li>
+                        <li><a href="#jobs" class="hover:text-white transition">Jobs</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">For Students</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Resume Tips</li>
+                        <li>Parent Guidelines</li>
+                        <li>Legal Help</li>
+                        <li>Career Paths</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition"><i class="fab fa-instagram mr-2"></i>@youthhire</a></li>
+                        <li><a href="#" class="hover:text-white transition"><i class="fab fa-tiktok mr-2"></i>@youthhire_tik</a></li>
+                        <li><a href="#" class="hover:text-white transition"><i class="fab fa-twitter mr-2"></i>@youthhire</a></li>
+                        <li><a href="#" class="hover:text-white transition"><i class="fab fa-snapchat mr-2"></i>youthhire</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-gray-700 my-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">&copy; 2024 YouthHire. All rights reserved.</p>
+                <div class="space-x-4 text-gray-400 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition">Parent Resources</a>
+                    <a href="#" class="hover:text-white transition">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navigation functions
+        let lastScrollTop = 0;
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('nav');
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > lastScrollTop) {
+                nav.style.transform = 'translateY(-100%)';
+            } else {
+                nav.style.transform = 'translateY(0)';
+            }
+            lastScrollTop = scrollTop;
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        function closeMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.add('hidden');
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const offsetTop = target.offsetTop - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Contact form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const ageInput = document.getElementById('age');
+            if (parseInt(ageInput.value) < 14 || parseInt(ageInput.value) > 17) {
+                alert('Please ensure you or your child is between 14-17 years old for our services.');
+                return;
+            }
+            alert('Thanks for reaching out! We\'ll get back to you soon to discuss opportunities.');
+            this.reset();
+        });
+
+        // Job application buttons
+        document.querySelectorAll('.apply-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Application process starting! Parents will need to approve before proceeding.');
+            });
+        });
+
+        // Resource buttons
+        const resourceBtns = document.querySelectorAll('.bg-green-600');
+        resourceBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                if (btn.textContent === 'Get Started') {
+                    alert('Resume builder opening. Parents may need to assist!');
+                } else if (btn.textContent === 'Practice Now') {
+                    alert('Interview practice quiz loading. Good luck!');
+                } else {
+                    alert('Skills challenge starting. Show your talents!');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
+```
