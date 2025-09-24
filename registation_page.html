@@ -192,12 +192,13 @@
 
         submitReferralButton.addEventListener('click', function() {
             const referralCode = document.getElementById('referralCode').value;
-            if (referralCode) {
+            if (referralCode==="PARTH") {
                 alert('Referral code applied! Thank you for joining. You will receive a bonus email shortly.');
             } else {
-                alert('Registration complete! No referral code entered - that\'s okay!');
+                alert('Wrong referral code. Please try again.');
             }
-            // In real app, redirect to dashboard or home page
+            window.location.replace("index.html");
+            
         });
     </script>
 </body>
